@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Focus",
+  "version": "1.0",
+  "description": "Become more focused",
+  "background": {
+    "scripts": ["blocker.js",
+				"background.js"]
+  },
+  "options_page": "options.html",
+  "icons": {
+    "128" : "images/focus.png"
+  },
+  "browser_action": {
+        "default_icon": "images/focus.png",
+    "default_title": "Focus",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["tabs", "storage","background"]
+}

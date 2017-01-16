@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Options</title>
+		<link href='https://unpkg.com/purecss@0.6.2/build/pure-min.css' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="jquery-1.7.min.js"></script>
+        <script type="text/javascript" src="blocker.js"></script>
+		<script type="text/javascript" src="options.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Signika:400,700' rel='stylesheet' type='text/css'>
+        <style>
+            body, h2, #makethathappen, #watchthis {
+                font-family: 'Signika', sans-serif;
+            }
+            body {
+                margin-top: 50px;
+                text-align: center;
+                min-width: 600px;
+                min-height: 600px;
+                font-family: 'Signika', sans-serif;
+            }
+            h2 {
+                font-size: 36px;
+            }
+            .button-remove {
+		        color: white;
+                border-radius: 4px;
+                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+                background: rgb(217,83,79);
+            }
+			ul {
+				display: inline-block;
+				text-align: center;
+				list-style-type: none;
+			}
+			li{
+				margin: 0;
+				text-align: left;
+				line-height: 30px;
+			}
+			#block, #redirect,#unblock {
+	
+			text-align: left;
+			}
+			
+        </style>
+    </head>
+    <body>
+        <h2>Time To Become Productive</h2>
+
+		<div id = "center">
+		<form class="pure-form">
+				<label for="redirectHere">Redirect</label>
+				<input type="text" placeholder="redirect" id="redirectHere">
+				<button type="submit" class="pure-button" id="redirect">Redirect</button>
+		</form>
+		</br>
+		<form class="pure-form">
+				<label for="blockThis">Block</label>
+				<input type="text" placeholder="block" id="blockThis">
+				<button type="submit" class="pure-button" id="block">Block</button>
+		</form>
+		</br>
+		<form class="pure-form">
+				<label for="unblockThis">Unblock</label>
+				<input type="text" placeholder="unblock" id="unblockThis">
+				<button type="submit" class="pure-button" id="unblock">Unblock</button>
+		</form>
+		</div>
+		
+        <ul id="blocklist"></ul>
+    </body>
+</html>

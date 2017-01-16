@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Focus</title>
+        <script type="text/javascript" src="jquery-1.7.min.js"></script>
+		<script type="text/javascript" src="blocker.js"></script>
+		<script type="text/javascript" src="popup.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Signika:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://unpkg.com/purecss@0.6.2/build/pure-min.css' rel='stylesheet' type='text/css'>
+        <style>
+            html {
+                height: 240px;
+            }
+            body, h2, h4 {
+                font-family: 'Signika', sans-serif;
+            }
+			
+            #boarder {
+                border: 2px solid black;
+                padding: 5px;
+                text-align: center;
+            }
+			
+            body {
+				height: 100px;
+                margin: 10px;
+                text-align: center;
+                min-width: 250px;
+                min-height: 100px;
+                font-family: 'Signika', sans-serif;
+                color: black;
+            }
+            h2 {
+                font-size: 36px;
+                color: black;
+                margin-bottom: 5px;
+            }
+            h4 {
+                font-size: 22px;
+                text-align: center;
+                margin-bottom: 5px;
+                margin-top: 10px;
+            }
+			.button-remove {
+		        color: white;
+                border-radius: 4px;
+                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+                background: rgb(217,83,79);
+            }
+			form{
+				text-align: center;
+     		    font-weight: bold;
+			}
+			label{
+				font-size: 20px;
+			}
+			button{
+				width:79px;
+				margin-top: 10px;
+				margin-left: 2.5px;
+				margin-right: 2.5px;
+			}
+			a{
+				text-align: center
+			}
+			select{
+				font-size: 15px;
+			}
+        </style>
+    </head>
+    <body>
+        <h2>Block Sites</h2>
+        <div id="boarder">
+			<h4 id="current_time"></h4>
+			<form>
+				<div class="pure-control-group">
+					<label for="focus">Focus Time </label>
+				        <select id="focus">
+							<option value = 15>15 min</option>
+							<option value = 30>30 min</option>
+							<option value = 45 selected = "selected">45 min</option>
+							<option value = 60>60 min</option>
+						</select>
+				</div>
+				
+				<div class="pure-control-group">
+					<label for="rest">Rest Time </label>
+				        <select id="rest">
+							<option value = 5 >5 min</option>
+							<option value = 10>10 min</option>
+							<option value = 15 selected = "selected">15 min</option>
+							<option value = 20>20 min</option>
+							<option value = 25>25 min</option>
+							<option value = 30>30 min</option>
+						</select>
+				</div>
+				
+				<button type="button" class="pure-button pure-button-primary" value = "start" id = "start">Start</button>
+				<button type="button" class="pure-button button-remove" value = "stop" id = "stop">Stop</button>
+				</br>
+				
+			</form>
+			<a id="options" href = "">options</a>
+			
+        </div>
+		
+    </body>
+</html>
